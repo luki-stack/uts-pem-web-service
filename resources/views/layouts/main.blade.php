@@ -10,7 +10,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
-        <a class="navbar-brand" href="/">UTS Project</a>
+        <a class="navbar-brand" href="/">PROJEK UTS</a>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">

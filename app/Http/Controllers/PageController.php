@@ -18,8 +18,8 @@ class PageController extends Controller
         // Data penulis bisa di-hardcode di sini atau diambil dari Model
         return view('about', [
             "title" => "About",
-            "nama" => "Nama Penulis (contoh: Mahasiswa A)",
-            "email" => "email@mahasiswa.com",
+            "nama" => "Luki Leokuna",
+            "nim" => "2301010032",
             "gambar" => "gambar-profil.jpg" // (simpan gambar di public/img)
         ]);
     }
