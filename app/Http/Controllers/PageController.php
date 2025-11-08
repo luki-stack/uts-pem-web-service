@@ -15,12 +15,25 @@ class PageController extends Controller
 
     public function about()
     {
-        // Data penulis bisa di-hardcode di sini atau diambil dari Model
-        return view('about', [
-            "title" => "About",
+        
+        $profile_luki =[
             "nama" => "Luki Leokuna",
             "nim" => "2301010032",
-            "gambar" => "gambar-profil.jpg" // (simpan gambar di public/img)
-        ]);
+            "role" => "Project Lead",
+            "gambar" => "profilluki.jpg" 
+        ];
+        $profile_ghina =[
+            "nama" => "Ghina Rahma Hidayah",
+            "nim" => "2301010034",
+            "role" => "UI/UX Designer",
+            "gambar" => "gambar-profil2.jpg" 
+        ];
+        
+        return view('about', [
+        "title" => "About",
+        "profile_luki" => $profile_luki,
+        "profile_ghina" => $profile_ghina
+    ]);
+
     }
 }
