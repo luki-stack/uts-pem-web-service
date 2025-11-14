@@ -26,7 +26,7 @@ class PageController extends Controller
             "nama" => "Ghina Rahma Hidayah",
             "nim" => "2301010034",
             "role" => "UI/UX Designer",
-            "gambar" => "gambar-profil2.jpg" 
+            "gambar" => "ghina-profil.png" 
         ];
         
         return view('about', [

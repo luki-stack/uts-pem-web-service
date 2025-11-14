@@ -9,7 +9,7 @@
 
     <style>
       body {
-        font-family: 'Montserrat', sans-serif; /* Font default untuk paragraf */
+        font-family: 'Montserrat', sans-serif; /*Font default untuk paragraf*/
       }
 
       /* Style untuk halaman home */

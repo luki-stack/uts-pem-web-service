@@ -8,7 +8,7 @@ class PostController extends Controller
 {
     public function index()
     {// 2. Ambil semua data dari Model
-        $allPosts = Post::get_Data(); 
+        $allPosts = Post::getData(); 
 
         // 4.B: Implementasikan function count() 
         $jumlahData = count($allPosts);
