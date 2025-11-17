@@ -19,20 +19,20 @@
         
         <div class="card h-100 bg-black text-white" style="border-radius: 15px; border: 1px solid #333;">
           
-          <img src="{{ asset('img/' . $post["image"]) }}" 
+          <img src="{{ asset('img/' . $post->image) }}" 
                class="card-img-top" 
-               alt="{{ $post["title"] }}" 
+               alt="{{ $post->title }}" 
                style="height: 200px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
           <div class="card-body d-flex flex-column">
             
-            <h5 class="card-title text-teal">{{ $post["title"] }}</h5>
+            <h5 class="card-title text-teal">{{ $post->title }}</h5>
             
             <h6 class="card-subtitle mb-2 text-muted">
-              Oleh: {{ $post["author"] }}
+              Oleh: {{ $post->author }}
             </h6>
             
             <p class="card-text">
-              {{ $post["body"] }}
+              {{ $post->body }}
             </p>
             
             <a href="#" class="btn btn-primary mt-auto">Baca Selengkapnya</a>

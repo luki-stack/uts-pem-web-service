@@ -7,11 +7,12 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function index()
-    {// 2. Ambil semua data dari Model
-        $allPosts = Post::getData(); 
-
-        // 4.B: Implementasikan function count() 
-        $jumlahData = count($allPosts);
+    { 
+        // 1. Ambil semua data dari Model (CARA BARU)
+        $allPosts = Post::all(); // Ini adalah fungsi Eloquent, bukan getData() lagi
+        
+        // 2. Implementasikan function count() (CARA BARU)
+        $jumlahData = $allPosts->count(); // 'count()' dari Collection
 
         // 3. Kirim data dan jumlahnya ke View
         return view('posts', [
